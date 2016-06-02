@@ -15,13 +15,23 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <executions>
                     <execution>
-                        <id>Vagrant</id>
-                        <phase>integration-test</phase>
+                        <id>Pre-Vagrant</id>
+                        <phase>pre-integration-test</phase>
                         <goals>
                             <goal>exec</goal>
                         </goals>
                         <configuration>
                             <executable>${basedir}/src/main/resources/vagrant/v001/start.bat</executable>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>Post-Vagrant</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>${basedir}/src/main/resources/vagrant/v001/stop.bat</executable>
                         </configuration>
                     </execution>
                 </executions>
