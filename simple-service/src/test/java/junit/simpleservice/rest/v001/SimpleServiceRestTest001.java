@@ -1,4 +1,4 @@
-package simpleservice.rest.v001;
+package junit.simpleservice.rest.v001;
 
 import org.junit.After;
 import org.junit.Assert;

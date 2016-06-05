@@ -4,7 +4,7 @@ import simpleservice.api.SimpleService;
 
 public class SimpleServiceImpl implements SimpleService {
 
-  public String doWork(){
+  public String doWork() {
     return "Hello World";
   }
 
