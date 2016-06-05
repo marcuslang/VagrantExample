@@ -68,6 +68,6 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 
-src/main/java/
-src/main/resources/vagrant/v001/.vagrant/
-src/test/
+simple/src/main/java/
+simple/src/main/resources/vagrant/v001/.vagrant/
+simple/src/test/
