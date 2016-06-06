@@ -35,7 +35,7 @@
               <goal>exec</goal>
             </goals>
             <configuration>
-              <executable>${basedir}/src/main/resources/vagrant/start.bat</executable>
+              <executable>${basedir}/src/main/resources/vagrant/${startscript}</executable>
             </configuration>
           </execution>
           <execution>
@@ -45,7 +45,7 @@
               <goal>exec</goal>
             </goals>
             <configuration>
-              <executable>${basedir}/src/main/resources/vagrant/stop.bat</executable>
+              <executable>${basedir}/src/main/resources/vagrant/${stopscript}</executable>
             </configuration>
           </execution>
         </executions>
@@ -78,5 +78,25 @@
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>unix-system</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <stopscript>stop.sh</stopscript>
+        <startscript>start.sh</startscript>
+      </properties>
+    </profile>
+    <profile>
+      <id>windows-system</id>
+      <properties>
+        <stopscript>stop.bat</stopscript>
+        <startscript>start.bat</startscript>
+      </properties>
+    </profile>
+  </profiles>
 
 </project>
