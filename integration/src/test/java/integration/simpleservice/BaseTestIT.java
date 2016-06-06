@@ -6,7 +6,7 @@ import org.junit.Test;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 
-public class IntegrationTest {
+public class BaseTestIT {
 
   @Test
   public void testApplicationPath() throws Exception {

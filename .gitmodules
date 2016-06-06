@@ -1,0 +1,6 @@
+[submodule "integration/src/main/resources/vagrant/ansible/roles/logstash-forwarder/ansible-role-logstash-forwarder"]
+	path = integration/src/main/resources/vagrant/ansible/roles/logstash-forwarder/ansible-role-logstash-forwarder
+	url = https://github.com/merodwin/ansible-role-logstash-forwarder
+[submodule "integration/src/main/resources/vagrant/ansible/roles/ansible-filebeat"]
+	path = integration/src/main/resources/vagrant/ansible/roles/ansible-filebeat
+	url = https://github.com/DavidWittman/ansible-filebeat

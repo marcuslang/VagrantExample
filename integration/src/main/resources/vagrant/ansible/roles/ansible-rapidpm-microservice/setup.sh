@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 export PYTHONUNBUFFERED=1
 export ANSIBLE_FORCE_COLOR=1
 
@@ -17,10 +16,3 @@ then
     echo "Ansible installed"
 fi
 
-cd /vagrant/ansible
-#move ansible inventory hosts file into  default location
-cp localhost.ini /etc/ansible/hosts
-#undo executable bits on synced files since ansible gets grumpy
-chmod -X /etc/ansible/hosts
-ansible-playbook playbook.yml -vv
-sleep 10

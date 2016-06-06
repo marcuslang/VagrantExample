@@ -1,0 +1,7 @@
+---
+# RapidPm Microservice Ansible Tasks
+
+# Install Java
+- include: java.yml
+- include: microservice.yml
+

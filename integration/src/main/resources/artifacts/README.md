@@ -1,0 +1,1 @@
+In this directory the artifacts to deploy will be copied

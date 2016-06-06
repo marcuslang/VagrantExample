@@ -1,0 +1,7 @@
+---
+
+microservice_jar: microservice.jar
+microservice_apt_repos:
+  - 'ppa:webupd8team/java'
+
+microservice_apt_java_package: oracle-java8-installer

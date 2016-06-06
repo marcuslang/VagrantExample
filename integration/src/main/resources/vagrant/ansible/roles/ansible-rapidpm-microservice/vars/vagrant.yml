@@ -1,0 +1,5 @@
+---
+
+
+microservice_apt_java_package: oracle-java8-installer
+microservice_java_home: /usr/lib/jvm/java-8-oracle

@@ -1,6 +1,12 @@
 # VagrantExample
 Example project for a maven driven test with Vagrant
 
+# Prerequisites
+
+ - vagrant installed on dev host
+ - VirtualBox installed on dev host
+
+
 ## module integration
 In phase 'Integration' Maven starts a Vagrant instance and starts a test against a microservice. 
 

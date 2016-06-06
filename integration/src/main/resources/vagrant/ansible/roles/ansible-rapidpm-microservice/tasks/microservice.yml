@@ -1,0 +1,14 @@
+---
+- name: create dir
+  file: path=/opt/rapidpm/microservices/ state=directory mode=0755
+
+- name: microservice-install
+  copy:
+    src: /vagrant/artifacts/{{microservice_jar}}
+    dest: /opt/rapidpm/microservices/{{microservice_jar}}
+  notify:
+    - start microservice
+
+# Restart Elasticsearch
+- name: start microservice
+  shell: java -jar /opt/rapidpm/microservices/'{{microservice_jar}}'&
